@@ -698,7 +698,7 @@ static const int KPathLengthMax = PATH_MAX - 64;
     if (!stmt) {
         return -1;
     }
-    sqlite3_bind_text(stmt, 1, sql.UTF8String, -1, NULL);
+    sqlite3_bind_text(stmt, 1, key.UTF8String, -1, NULL);
     int result = sqlite3_step(stmt);
     if (result != SQLITE_ROW) {
         if (self.logEnable) {

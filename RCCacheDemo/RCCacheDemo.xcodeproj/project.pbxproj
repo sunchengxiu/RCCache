@@ -17,6 +17,7 @@
 		E817279120E210A000F66BFC /* RCCacheDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E817279020E210A000F66BFC /* RCCacheDemoUITests.m */; };
 		E89D149E20EB1B1600049944 /* RCDispatchQueueLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89D149C20EB1B1600049944 /* RCDispatchQueueLib.framework */; };
 		E89D14A220EB1BD400049944 /* RCCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89D14A120EB1BD400049944 /* RCCache.framework */; };
+		E89D14A620EB8C5600049944 /* RCUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E89D14A520EB8C5600049944 /* RCUserInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		E817279220E210A000F66BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E89D149C20EB1B1600049944 /* RCDispatchQueueLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RCDispatchQueueLib.framework; sourceTree = "<group>"; };
 		E89D14A120EB1BD400049944 /* RCCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RCCache.framework; sourceTree = "<group>"; };
+		E89D14A420EB8C5600049944 /* RCUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCUserInfo.h; sourceTree = "<group>"; };
+		E89D14A520EB8C5600049944 /* RCUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCUserInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				E817276D20E2109F00F66BFC /* AppDelegate.m */,
 				E817276F20E2109F00F66BFC /* ViewController.h */,
 				E817277020E2109F00F66BFC /* ViewController.m */,
+				E89D14A420EB8C5600049944 /* RCUserInfo.h */,
+				E89D14A520EB8C5600049944 /* RCUserInfo.m */,
 				E817277220E2109F00F66BFC /* Main.storyboard */,
 				E817277520E210A000F66BFC /* Assets.xcassets */,
 				E817277720E210A000F66BFC /* LaunchScreen.storyboard */,
@@ -281,6 +286,7 @@
 				E817277120E2109F00F66BFC /* ViewController.m in Sources */,
 				E817277C20E210A000F66BFC /* main.m in Sources */,
 				E817276E20E2109F00F66BFC /* AppDelegate.m in Sources */,
+				E89D14A620EB8C5600049944 /* RCUserInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
