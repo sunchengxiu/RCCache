@@ -1,0 +1,6 @@
+framework module RCDispatchQueueLib {
+  umbrella header "RCDispatchQueueLib.h"
+
+  export *
+  module * { export * }
+}

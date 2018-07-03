@@ -1,0 +1,6 @@
+framework module RCCache {
+  umbrella header "RCCache.h"
+
+  export *
+  module * { export * }
+}
