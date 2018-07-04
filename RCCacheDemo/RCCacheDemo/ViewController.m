@@ -20,14 +20,17 @@
     NSString *value = @"i am value";
     NSString *key = @"key1";
     RCDataCache *cache = [RCDataCache cacheWithName:@"RCCacheName"];
+    cache.diskCache.threshold = 0;
     [cache setObject:value forKey:key];
     NSLog(@"value is :%@",[cache.memoryCache objectForKey:key]);
     NSLog(@"value is :%@",[cache.diskCache objectForKey:key]);
 //    [cache removeObjectForKey:key];
-    [cache removeAllObjects];
-    NSLog(@"value is :%@",[cache.memoryCache objectForKey:key]);
-    NSLog(@"value is :%@",[cache.diskCache objectForKey:key]);
-    
+//    [cache removeAllObjects];
+//    NSLog(@"value is :%@",[cache.memoryCache objectForKey:key]);
+//    NSLog(@"value is :%@",[cache.diskCache objectForKey:key]);
+    NSLog(@"value is :%d",[cache containObjectForKey:key]);
+    NSLog(@"value is :%d",[cache.memoryCache containObjectForKey:key]);
+    NSLog(@"value is :%d",[cache.diskCache containObjectForKey:key]);
     RCUserInfo *info = [RCUserInfo new];
     info.name = @"sunchengxiu";;
     info.address = @"dalian";
@@ -47,7 +50,7 @@
     [cache setObject:info forKey:@"userInfo"];
 //    [cache.diskCache ];
     RCUserInfo *info1 = (RCUserInfo *)[cache.diskCache objectForKey:@"userInfo"];
-    NSLog(@"%@",info1);
+    NSLog(@"%@",[cache.memoryCache totalLimitCount]);
     
 }
 

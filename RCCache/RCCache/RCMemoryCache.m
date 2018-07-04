@@ -250,7 +250,6 @@ RCINLINE dispatch_queue_t RCReleaseQueue(){
         node.nextEqualTo(_head);
         _head.prevEqualTo(node);
         _head = node;
-        node.prev.nextEqualTo(_head);
         
     } else {
         _head = _tail = node;

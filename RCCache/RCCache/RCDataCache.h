@@ -139,6 +139,29 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)removeAllObjectsWithProgressBlock:(nullable void (^)(int removedCount , int totalCount))progressBlock endBlock:(nullable void (^)(BOOL error))endBlock;
 
+/**
+ 总的内存缓存的数量
+
+ @return 缓存的总数量
+ */
+- (int)totalMemoryCacheCount;
+
+/**
+ 总的磁盘缓存的数量
+ 
+ @return 缓存的总数量
+ */
+- (int)totalDiskCahceCount;
+
+/**
+ 总的没存开销大小
+
+ @return 总开销
+ */
+- (int)totalMemoryCacheCost;
+
+- (int)totalDiskCacheCost;
+
 
 // 不能使用一下两个方法初始化
 -(instancetype)init UNAVAILABLE_ATTRIBUTE;
